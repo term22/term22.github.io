@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+	<!-- Setup stuff -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mantione Cars</title>
+
+	<!-- Import the CSS -->
+	<link rel="stylesheet" type="text/css" href="cars.css" media="screen"/>
+	
+	<!-- Bootstrap imports -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+	
+	<!-- Javascript -->
+	<script>
+		el = document.getElementById("simple-ss");
+		el.onclick = links;
+
+		function links() {
+			left = parseInt(getComputedStyle(el).getPropertyValue("background-position").split(" ", 1));
+   
+		/* DEFINE POSITIONS FOR CLICK EVENTS */
+		if (left >= -400) {
+  
+			// First until about half way scrolled over
+			alert("first");
+			//window.open("https://www.google.com");
+  
+		} else if (left >= -1200) {
+  
+			// Second when half way scrolled either side
+			alert("second");
+			//window.open("https://www.google.com");
+    
+		} else if (left >= -1600) {
+    
+			// Third when over half way into banner
+			alert("third");
+			//window.open("https://www.google.com");
+    
+			}
+   
+		}	
+	</script>
+	
+</head>
+
+<body>
+<main>
+
+	<img src="mantione.png" alt="logo" width="200" height="200">
+	
+	<!-- Company Title -->
+	<h1>Mantione Cars</h1>
+
+<br>
+
+<!-- Navbar to other pages) -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Links</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="FAQ.html">FAQ's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hours.html">Hours</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Cars</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+
+<br>
+
+<!-- The Slideshow  -->
+<div class="simple-ss" id="simple-ss"></div>
+
+<br>
+
+<!-- Secondary Message area using bootstrap -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      Mantione Cars was founded in 2006 with a purpose to deliver the finest European Cars to the Northeast.
+    </div>
+    <div class="col-sm">
+      In addition to selling fine cars, we also provide services to these cars such as paint jobs and upgrades.
+    </div>
+    <div class="col-sm">
+      Mantione Cars was voted as one of the best European Car Dealerships in the Northeast in 2014.
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Footer (Includes contact info for the company) -->
+<footer>
+
+	<h4>Contact Information</h4>
+	
+	<br>
+	<strong>
+		Mantione Cars
+	</strong>
+	<br>
+	<strong>
+		3456 Sesame Street
+	</strong>
+	<br>
+	<strong>
+		Anytown, USA 12345,
+	</strong>
+	<br>
+	<strong>
+		(987) 654-3210
+	</strong>
+	<br>
+	<strong>
+		mantione.cars@gmail.com
+	</strong>
+
+</footer>
+
+</main>
+
+</body>
+</html>
