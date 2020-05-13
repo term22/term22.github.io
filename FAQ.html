@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Setup stuff -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Bootstrap imports -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- Title -->
+    <title>Mantione Cars</title>
+	
+	<!-- Javascript -->
+	<script>
+		function submitForm() {
+			var frm = document.getElementsByName('contact-form')[0];
+			frm.submit(); 
+			frm.reset();  
+			return false; 
+		}
+	</script>
+	
+</head>
+
+<body>
+<main>
+
+	<a href="cars.html"><img src="mantione.png" alt="logo" width="200" height="200"></a>
+
+    <h1> FAQ's </h1>
+
+<br>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">Links</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="FAQ.html">FAQ's</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="hours.html">Hours</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="products.html">Cars</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="services.html">Services</a>
+			</li>
+		</ul>
+	</div>  
+</nav>
+
+<br>
+
+<section>
+    <!-- Question #1 -->
+    <h3>What if I don't like the car that I bought? What is the return policy?</h3>
+
+    <p>You can return an unliked car at anytime after you bought it. However, when returned less that 6 months after purchase, users can expect a total refund and have choice of a new possible car</p>
+</section>
+
+<section>
+    <!-- Question #2 -->
+    <h3>How do the prices of the cars compare with the prices at other dealerships?</h3>
+
+    <p>For the most part, the cars at our dealership cost about the same as if they were sold at any other dealership. However, certain upgrades for some high end cars can make the price a little more expensive</p>
+</section>
+
+<section>
+    <!-- Question #3 -->
+    <h3>What if Mantione doesn't have or is sold out of a particular car?</h3>
+
+    <p>For sold out cars, we try to get more kinds of those cars within a month of being sold out. Also, if you would like to buy a car from us that we don't sell, type it in our suggestion box below and we will try to add it to our catalog.</p>
+</section>
+
+<!-- Suggestion box (for question #3) -->
+<div class="container">  
+    <form id="suggestion_box" method="post">
+        <fieldset>
+            <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required=""></textarea>
+		</fieldset>
+		
+		<br>
+
+        <fieldset>
+			<div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;">
+			<input type="submit" value="Submit" id="btnsubmit" onclick="submitForm()">
+			</div>
+        </fieldset>
+    </form>
+</div>
+
+</main>
+
+
+</body>
+</html>
