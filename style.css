@@ -48,11 +48,11 @@ h1 {
     transition: left 0s 0.75s;
 }
 .slide-1 {
-    background-image: url("images/mySlides/car#1.jpg");
+    background-image: url("images/car#1.jpg");
 }
 .slide-2 {
-    background-image: url("images/mySlides/car#2.jpg");
+    background-image: url("images/car#2.jpg");
 }
 .slide-3 {
-    background-image: url("images/mySlides/car#3.jpg");
+    background-image: url("images/car#3.jpg");
 }
