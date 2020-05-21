@@ -99,17 +99,16 @@
 </section>
 
 <!-- Suggestion box (for question #3) -->
-<div class="container">  
-    <form id="suggestion_box" method="post">
-        <fieldset>
-            <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required=""></textarea>
-		</fieldset>
-		
-		<br>
-
-        <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"><input type="submit" value="Request My Appointment" class="wpcf7-form-control wpcf7-submit"><img class="ajax-loader" src="http://www.professionalaudiologicalservices.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></div>
-
-    </form>
+<div id="contactForm" class="contactForm">
+	<div id="formBody" class="formBody">
+		<form action="" method="POST" name="contactForm">
+		<div class="inputContainer">
+			<textarea name="feedback" id="userMessage" rows="10" placeholder="Suggestion"></textarea>
+		</div>
+		<input id="submitBtn" class="submitBtn" type="submit" value="Send">
+		</form>
+	</div>
+<center><p><em>Thank You for your suggestion</em></p></center>
 </div>
 
 </main>
